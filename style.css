@@ -6,7 +6,6 @@
 }
 html, body{
     height: 100vh;
-    overflow: hidden;
 }
 body {
     background-color: #FFBDBD;
@@ -104,7 +103,7 @@ footer {
 .password-container{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  position: relative;
   width: 100%;
   background: #ffffff;
   border: 1px solid #7a7a7a;
@@ -138,9 +137,14 @@ footer {
     font-weight: 650;
 }
 .lock{
+    flex-shrink: 0;
     width: 15px;
 }
 .eye{
+    position: absolute;
+    right: 12px; 
+    top: 50%; 
+    transform: translateY(-50%);
     width: 20px;
     height: 20px;
     margin-left: auto;
@@ -251,8 +255,7 @@ footer {
 @media (max-width: 480px) {
   html, body {
     height: auto;
-    min-height: 100vh;
-    overflow: auto; 
+    min-height: 100vh; 
   }
 
   body {
