@@ -43,7 +43,7 @@ footer {
   margin: auto;
 
 }
-.login-form {
+.form {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -101,6 +101,17 @@ footer {
     width: 100%;
     max-width: 280px;
 }
+.password-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #7a7a7a;
+  border-radius: 20px;
+  padding: 8px 14px;
+  box-sizing: border-box;
+}
 .password-section fieldset{
     background-color: #FFFFFF;
     border: 1.5px solid #707070;
@@ -113,6 +124,12 @@ footer {
     border: none;
     outline: none;
     font-family: "Inter", sans-serif;
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 8px;
+    width: 100%;
 }
 .password-section span{
     font-family: "Inter", sans-serif;
@@ -124,7 +141,10 @@ footer {
     width: 15px;
 }
 .eye{
+    width: 20px;
+    height: 20px;
     margin-left: auto;
+    flex-shrink: 0;
     cursor: pointer;
 }
 .forgot-password{
@@ -232,7 +252,7 @@ footer {
   html, body {
     height: auto;
     min-height: 100vh;
-    overflow-y: auto; 
+    overflow: auto; 
   }
 
   body {
