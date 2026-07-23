@@ -135,6 +135,7 @@ footer {
     color: #312424;
     font-weight: 900;
     font-family: "Inter", sans-serif;
+    white-space: nowrap;
 }
 /* Login area */
 .login-area{
@@ -226,5 +227,32 @@ footer {
   color: #3D2929;
   font-weight: 600;
   text-decoration: underline;
+}
+@media (max-width: 480px) {
+  html, body {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto; 
+  }
+
+  body {
+    padding: 20px 10px;
+  }
+  .login-card {
+    width: 95%;
+    padding: 16px 14px;
+    border-radius: 18px;
+  }
+  h1 {
+    font-size: 1.2rem;
+    margin: 4px 0;
+  }
+  h2 {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+  .login-form {
+    gap: 8px;
+  }
 }
 
